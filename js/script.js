@@ -29,7 +29,18 @@ function init() {
             gBalloons[i].speed *= 1.009;
             balloon.style.bottom = speed + balloonBottom + startFromBottom + 'px';
             startFromBottom++;
-            if (startFromBottom > 1200) clearInterval(goUp);
+            if (startFromBottom > 1200) {
+                clearInterval(goUp);
+                location.reload();
+            }
         }
     }, 20);
+
+}
+function pop(that, e) {
+    // that.style.display = 'none';
+    e.target.innerText='100 points!!';
+    e.target.style='text-align:center;z-index:-1;font-size:700px;position:fixed;left:0;width:1000px;height:1000px;opacity:0;transition:all 1.3s ease';
+    var popSound = new Audio('./mp3/pop.mp3');
+    popSound.play();
 }
