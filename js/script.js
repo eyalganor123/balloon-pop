@@ -4,7 +4,7 @@
 'use strict'
 var gBalloons = [{
     bottom: 10,
-    speed: 2
+    speed: 12
 }, {
     bottom: 110,
     speed: 3
@@ -37,10 +37,10 @@ function init() {
     }, 20);
 
 }
-function pop(that, e) {
+function pop(e) {
     // that.style.display = 'none';
     e.target.innerText='100 points!!';
-    e.target.style='text-align:center;z-index:-1;font-size:700px;position:fixed;left:0;width:1000px;height:1000px;opacity:0;transition:all 1.3s ease';
+    e.target.style='text-align:center;z-index:-1;font-size:400px;position:absolute;top:10%;left:30%;;width:1000px;height:1000px;opacity:0;transition:all 1.3s ease';
     var popSound = new Audio('./mp3/pop.mp3');
     popSound.play();
 }

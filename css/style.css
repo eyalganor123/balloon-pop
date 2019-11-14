@@ -2,7 +2,6 @@ body {
     margin: 0;
     /* background: red; */
     background: rgba(5, 154, 212, 0.699);
-    transition:all 1s;
 
 }
 .balloon {
@@ -27,32 +26,30 @@ body {
      background:rgba(0,0,0,0.2); 
    }
 .b1{
-    left:10px;
+    left:10%;
     background:rgb(210, 121, 121);
 
 
 }
 .b2{
-    left:200px;
+    left:40%;
     background:rgb(8, 127, 238);
 
 
 }
 .b3{
-    left:400px;
+    left:70%;
     background:rgb(241, 3, 150);
 
 
 }
 .b4{
-    left:600px;
+    left:90%;
     background:rgb(186, 223, 216);
 
 
 }
-.pop{
-    /* opacity:0; */
-}
+
 
 
 
